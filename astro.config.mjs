@@ -6,6 +6,8 @@ import { presetIcons, presetUno, presetAttributify, presetTypography } from 'uno
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://lalagis.github.io',
+  base: '/lalagis.io',
   integrations: [
     react(), 
     UnoCSS({
