@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config'
 import react from "@astrojs/react"
 
 import UnoCSS from 'unocss/astro'
-import { presetIcons, presetUno, presetAttributify, presetTypography } from 'unocss'
+import { presetIcons, presetUno, presetAttributify, presetTypography, presetWebFonts } from 'unocss'
 
 // https://astro.build/config
 export default defineConfig({
@@ -23,6 +23,12 @@ export default defineConfig({
             'a': {
               'text-decoration': 'none',
             }
+          }
+        }),
+        presetWebFonts({
+          provider: 'google',
+          fonts: {
+            sans: 'Noto Sans SC',
           }
         })
       ]
