@@ -42,7 +42,7 @@ export default function Socials() {
   ])
 
   return (
-    <div className="mt-2">
+    <div className="mt-2 flex flex-row flex-wrap gap-y-1">
       {list.map((item, index) => (
         <SocialItem 
           key={index}

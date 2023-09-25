@@ -112,19 +112,9 @@ export default function Projects() {
       icon: 'i-fluent-emoji-flat:cherry-blossom',
       techs: [ 
         {
-          name: 'nextjs',
+          name: 'nextjs+react+typescript',
           icon: 'i-akar-icons:nextjs-fill',
           url: 'https://nextjs.org/docs'
-        },
-        {
-          name: 'react',
-          icon: 'i-akar-icons:react-fill',
-          url: 'https://react.dev/'
-        },
-        {
-          name: 'typescript',
-          icon: 'i-simple-icons:typescript',
-          url: 'https://www.typescriptlang.org/docs/'
         },
         {
           name: 'graphql',
@@ -132,10 +122,20 @@ export default function Projects() {
           url: 'https://graphql.org/'
         },
         {
-          name: 'https://docs.nestjs.com/',
+          name: 'nestjs',
           icon: 'i-simple-icons:nestjs',
           url: 'https://docs.nestjs.com/'
-        }
+        },
+        {
+          name: 'prisma',
+          icon: 'i-simple-icons:prisma',
+          url: 'https://www.prisma.io/'
+        },
+        {
+          name: 'postgres',
+          icon: 'i-akar-icons:postgresql-fill',
+          url: 'https://www.postgresql.org/docs/current/index.html'
+        },
       ]
     },
     {
@@ -419,28 +419,28 @@ export default function Projects() {
 function ProjectItem(props: ProjectItemProps) {
   return (
     <div className="px-4 py-3 rounded-md bg-gray-50 transition-colors decoration-none hover:bg-gray-100 dark:bg-gray-50/10 dark:hover:bg-gray-50/20">
-    <div className="flex h-full items-center justify-center flex-row">
-      <div className="mr-4 text-4xl">
-        <div className={props.icon} />
-      </div>
-      <div className="ml-1">
-        <div className="font-medium leading-relaxed">{props.name}</div>
-        <div className="op-50 font-normal text-sm">{props.desc}</div>
-      </div>
-      <div className="flex flex-1 flex-row justify-end gap-x-3">
-        { !!props.techs?.length && (props.techs.map((item, index) => (
-          <a 
-            key={index} 
-            className="flex flex-col rounded-md p-2 transition-colors decoration-none bg-white hover:bg-gray-200 dark:bg-gray-50/20 dark:hover:bg-gray-50/30"
-            href={item.url}
-            title={item.name}
-            target="_blank"
-          >
-            <div className={`${item.icon} text-3xl`} />
-          </a>
-        ))) }
+      <div className="flex h-full items-center sm:justify-center flex-row">
+        <div className="mr-4 text-4xl">
+          <div className={props.icon} />
+        </div>
+        <div className="ml-1">
+          <div className="font-medium leading-relaxed">{props.name}</div>
+          <div className="op-50 font-normal text-sm">{props.desc}</div>
+        </div>
+        <div className="sm:flex flex-1 flex-row justify-end gap-x-3 hidden">
+          { !!props.techs?.length && (props.techs.map((item, index) => (
+            <a 
+              key={index} 
+              className="flex flex-col rounded-md p-2 transition-colors decoration-none bg-white hover:bg-gray-200 dark:bg-gray-50/20 dark:hover:bg-gray-50/30"
+              href={item.url}
+              title={item.name}
+              target="_blank"
+            >
+              <div className={`${item.icon} text-3xl`} />
+            </a>
+          ))) }
+        </div>
       </div>
     </div>
-  </div>
   )
 }
