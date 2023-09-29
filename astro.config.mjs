@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import million from 'million/compiler';
 import { defineConfig } from 'astro/config'
 import react from "@astrojs/react"
@@ -12,7 +14,14 @@ export default defineConfig({
   base: '/lalagis.io',
 
   vite: {
-    plugins: [million.vite({ mode: 'react', server: true, auto: true })]
+    plugins: [million.vite({ mode: 'react', server: true, auto: true })],
+    test: {
+      globals: true,
+      environment: 'jsdom',
+      coverage: {
+        reporter: ['text', 'json', 'html']
+      }
+    }
   },
 
   integrations: [
