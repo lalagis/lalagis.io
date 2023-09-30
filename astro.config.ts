@@ -3,10 +3,7 @@
 import million from 'million/compiler';
 import { defineConfig } from 'astro/config'
 import react from "@astrojs/react"
-
-// unocss
 import UnoCSS from 'unocss/astro'
-import { presetIcons, presetUno, presetAttributify, presetTypography, presetWebFonts } from 'unocss'
 
 // https://astro.build/config
 export default defineConfig({
@@ -28,26 +25,6 @@ export default defineConfig({
     react(), 
     UnoCSS({
       injectReset: true,
-      presets: [
-        presetAttributify(),
-        presetUno({
-          dark: 'media'
-        }),
-        presetIcons(), 
-        presetTypography({
-          cssExtend: {
-            'a': {
-              'text-decoration': 'none',
-            }
-          }
-        }),
-        presetWebFonts({
-          provider: 'google',
-          fonts: {
-            sans: 'Noto Sans SC',
-          }
-        })
-      ]
     })
   ]
 })

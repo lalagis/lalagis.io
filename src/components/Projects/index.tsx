@@ -16,6 +16,43 @@ interface TechItem {
 export default function Projects() {
   const [list] = useState<ProjectItemProps[]>([
     {
+      name: '导流地图',
+      desc: '地理运动的可视化',
+      icon: 'i-fluent-emoji-flat:worm',
+      techs: [ 
+        {
+          name: 'astro+react+typescript',
+          icon: 'i-simple-icons:astro',
+          url: 'https://docs.astro.build/en/getting-started/'
+        },
+        {
+          name: 'unocss+iconify',
+          icon: 'i-simple-icons:unocss',
+          url: 'https://unocss.dev/'
+        },
+        // {
+        //   name: 'bun',
+        //   icon: 'i-simple-icons:bun',
+        //   url: 'https://bun.sh/docs'
+        // },
+        {
+          name: 'deck.gl+flowmap.gl',
+          icon: 'i-simple-icons:webgl',
+          url: 'https://deck.gl/docs'
+        },
+        {
+          name: 'tauri',
+          icon: 'i-simple-icons:tauri',
+          url: 'https://beta.tauri.app/2/reference/config/'
+        },
+        {
+          name: 'vitest',
+          icon: 'i-simple-icons:vitest',
+          url: 'https://vitest.dev/'
+        }
+      ]
+    },
+    {
       name: '个人站 2.0',
       desc: '简历与项目经历',
       icon: 'i-fluent-emoji-flat:card-index',
