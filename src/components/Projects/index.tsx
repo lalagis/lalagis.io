@@ -100,9 +100,9 @@ export default function Projects() {
           url: 'https://docs.mapbox.com/'
         },
         {
-          name: 'python+robyn',
+          name: 'python3+robyn',
           icon: 'i-akar-icons:python-fill',
-          url: 'https://docs.python.org/3'
+          url: 'https://robyn.tech/'
         },
         {
           name: 'postgres',
