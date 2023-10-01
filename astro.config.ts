@@ -1,5 +1,3 @@
-/// <reference types="vitest" />
-
 import million from 'million/compiler';
 import { defineConfig } from 'astro/config'
 import react from "@astrojs/react"
