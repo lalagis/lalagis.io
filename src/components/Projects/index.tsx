@@ -26,7 +26,7 @@ export default function Projects() {
           url: 'https://docs.astro.build/en/getting-started/'
         },
         {
-          name: 'cesiumJS',
+          name: 'cesiumJS+resium',
           icon: 'i-simple-icons:cesium',
           url: 'https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/'
         },
