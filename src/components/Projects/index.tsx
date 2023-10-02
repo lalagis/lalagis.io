@@ -16,6 +16,38 @@ interface TechItem {
 export default function Projects() {
   const [list] = useState<ProjectItemProps[]>([
     {
+      name: '校园飞行',
+      desc: '摄影测量产出的3D模型web浏览与交互',
+      icon: 'i-fluent-emoji-flat:airplane',
+      techs: [ 
+        {
+          name: 'astro+react+typescript',
+          icon: 'i-simple-icons:astro',
+          url: 'https://docs.astro.build/en/getting-started/'
+        },
+        {
+          name: 'cesiumJS',
+          icon: 'i-simple-icons:cesium',
+          url: 'https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/'
+        },
+        {
+          name: 'unocss',
+          icon: 'i-simple-icons:unocss',
+          url: 'https://unocss.dev/'
+        },
+        {
+          name: 'headlessui',
+          icon: 'i-simple-icons:headlessui',
+          url: 'https://headlessui.com/'
+        },
+        {
+          name: 'vitest',
+          icon: 'i-simple-icons:vitest',
+          url: 'https://vitest.dev/'
+        }
+      ]
+    },
+    {
       name: '导流地图',
       desc: '地理运动的可视化',
       icon: 'i-fluent-emoji-flat:worm',
@@ -26,15 +58,10 @@ export default function Projects() {
           url: 'https://docs.astro.build/en/getting-started/'
         },
         {
-          name: 'unocss+iconify',
+          name: 'unocss',
           icon: 'i-simple-icons:unocss',
           url: 'https://unocss.dev/'
         },
-        // {
-        //   name: 'bun',
-        //   icon: 'i-simple-icons:bun',
-        //   url: 'https://bun.sh/docs'
-        // },
         {
           name: 'deck.gl+flowmap.gl',
           icon: 'i-simple-icons:webgl',
@@ -43,7 +70,7 @@ export default function Projects() {
         {
           name: 'tauri',
           icon: 'i-simple-icons:tauri',
-          url: 'https://beta.tauri.app/2/reference/config/'
+          url: 'https://tauri.app/zh-cn/v1/guides/getting-started/setup/integrate'
         },
         {
           name: 'vitest',
