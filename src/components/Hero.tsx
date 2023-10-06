@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Socials from "../Socials"
+import Socials from "./Socials"
 
 export default function Hero() {
   const [avatarUrl] = useState('https://github.com/lalagis.png')

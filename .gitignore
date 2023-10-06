@@ -22,4 +22,4 @@ pnpm-debug.log*
 
 # tests
 coverage/
-src/components/*/__snapshots__/
+src/tests/__snapshots__/

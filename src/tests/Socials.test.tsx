@@ -1,10 +1,10 @@
 import { describe, expect, test } from "vitest"
 import renderer from 'react-test-renderer'
-import Hero from "."
+import Socials, { SocialItem } from '../components/Socials'
 
-describe('Hero', () => {
-  test('load hero', () => {
-    const component = renderer.create(<Hero />)
+describe('Socials', () => {
+  test('load socials', () => {
+    const component = renderer.create(<Socials />)
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()
   })
