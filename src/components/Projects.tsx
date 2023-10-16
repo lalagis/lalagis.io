@@ -16,6 +16,38 @@ interface TechItem {
 export default function Projects() {
   const [list] = useState<ProjectItemProps[]>([
     {
+      name: 'AOI查询器',
+      desc: '百度地图api 爬取可能存在aoi的poi bdmc/gcj02/wgs84转换',
+      icon: 'i-fluent-emoji-flat:triangular-flag',
+      techs: [ 
+        {
+          name: 'nuxt 3+vue 3+typescript',
+          icon: 'i-simple-icons:nuxtdotjs',
+          url: 'https://nuxt.com/docs'
+        },
+        {
+          name: 'mapbox',
+          icon: 'i-simple-icons:mapbox',
+          url: 'https://docs.mapbox.com/'
+        },
+        {
+          name: 'unocss',
+          icon: 'i-simple-icons:unocss',
+          url: 'https://unocss.dev/'
+        },
+        {
+          name: 'headlessui',
+          icon: 'i-simple-icons:headlessui',
+          url: 'https://headlessui.com/'
+        },
+        {
+          name: 'baidu map api',
+          icon: 'i-simple-icons:baidu',
+          url: 'https://lbsyun.baidu.com/index.php'
+        }
+      ]
+    },
+    {
       name: '校园飞行',
       desc: '摄影测量产出的3D模型web浏览与交互',
       icon: 'i-fluent-emoji-flat:airplane',
