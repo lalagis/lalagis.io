@@ -16,6 +16,28 @@ interface TechItem {
 export default function Projects() {
   const [list] = useState<ProjectItemProps[]>([
     {
+      name: '深圳公交互动地图',
+      desc: '城市公交爬取vw压缩 体量数据mapboxgl绘制',
+      icon: 'i-fluent-emoji-flat:trolleybus',
+      techs: [ 
+        {
+          name: 'nuxt 3+vue 3+typescript',
+          icon: 'i-simple-icons:nuxtdotjs',
+          url: 'https://nuxt.com/docs'
+        },
+        {
+          name: 'mapbox',
+          icon: 'i-simple-icons:mapbox',
+          url: 'https://docs.mapbox.com/'
+        },
+        {
+          name: 'unocss',
+          icon: 'i-simple-icons:unocss',
+          url: 'https://unocss.dev/'
+        },
+      ]
+    },
+    {
       name: 'AOI查询器',
       desc: '百度地图api 爬取可能存在aoi的poi bdmc/gcj02/wgs84转换',
       icon: 'i-fluent-emoji-flat:triangular-flag',
