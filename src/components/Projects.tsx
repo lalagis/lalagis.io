@@ -16,6 +16,33 @@ interface TechItem {
 export default function Projects() {
   const [list] = useState<ProjectItemProps[]>([
     {
+      name: '遥感去雾算法的几种实现',
+      desc: '基于图像增强，图像复原以及深度学习三个方向的处理',
+      icon: 'i-fluent-emoji-flat:fog',
+      techs: [
+        {
+          name: 'flet(flutter)',
+          icon: 'i-simple-icons:flutter',
+          url: 'https://flet.dev/'
+        },
+        {
+          name: 'python3+robyn',
+          icon: 'i-akar-icons:python-fill',
+          url: 'https://www.python.org/'
+        },
+        {
+          name: 'PaddlePaddle+PaddleRS',
+          icon: 'i-simple-icons:paddlepaddle',
+          url: 'https://github.com/PaddlePaddle/PaddleRS'
+        },
+        {
+          name: 'opencv',
+          icon: 'i-simple-icons:opencv',
+          url: 'https://opencv.org/'
+        }
+      ]
+    },
+    {
       name: '深圳公交互动地图',
       desc: '城市公交爬取vw压缩 体量数据mapboxgl绘制',
       icon: 'i-fluent-emoji-flat:trolleybus',
